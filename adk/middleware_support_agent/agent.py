@@ -8,7 +8,7 @@ from typing import List, Any, Optional, Dict
 from dotenv import load_dotenv
 load_dotenv()
 
-SCRIPT_DIR = "/server_maintenance/server_scripts/"
+SCRIPT_DIR = "/middleware_support_agent/server_maintenance/server_scripts/"
 model_name = 'gemini-2.0-flash'
 
 ######################################################
@@ -176,15 +176,15 @@ def security_guardrail_callback(
     if tool_name == command_execution.name:
         command_to_execute = args.get("command", "").lower()
         normal_patterns = [
-            r"bash /server_maintenance/server_scripts/healthcheck.sh web",
-            r"bash /server_maintenance/server_scripts/healthcheck.sh app",
-            r"bash /server_maintenance/server_scripts/healthcheck.sh db",
-            r"bash /server_maintenance/server_scripts/stopserver.sh web",
-            r"bash /server_maintenance/server_scripts/stopserver.sh app",
-            r"bash /server_maintenance/server_scripts/stopserver.sh db",
-            r"bash /server_maintenance/server_scripts/startserver.sh web",
-            r"bash /server_maintenance/server_scripts/startserver.sh app",
-            r"bash /server_maintenance/server_scripts/startserver.sh db"
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/healthcheck.sh web",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/healthcheck.sh app",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/healthcheck.sh db",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/stopserver.sh web",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/stopserver.sh app",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/stopserver.sh db",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/startserver.sh web",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/startserver.sh app",
+            r"bash /middleware_support_agent/server_maintenance/server_scripts/startserver.sh db"
         ]
         is_allowed = False
         for pattern in normal_patterns:
