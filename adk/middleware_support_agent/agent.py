@@ -112,6 +112,8 @@ cmd_generator_agent = LlmAgent(
 
     Provide the sequence of scripts to execute as output, along with the appropriate arguments.
 
+    Name of the servers: app , web, db
+
     And the order for full restart will be
 
     stop web -> app -> db
