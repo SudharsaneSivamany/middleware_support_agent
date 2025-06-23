@@ -9,3 +9,6 @@ Keys:
 
 1. Callback as gaurdrail prevent execution of unauthorized commands.
 2. Multiagent, one for analyzing and one for generating the command is used for seamless execution.
+
+Architecture Diagram:
+![plot](./arch_diagram.png)
