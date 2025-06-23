@@ -232,6 +232,8 @@ root_agent = LlmAgent(
       If the user input is out of the context of server maintenance (e.g., "Tell me a joke", "What is the capital of France?"), regret for not being able to solve it and state that you are designed for server maintenance.
 
       Your responses should be clear, informative, and guide the user through the process, especially if an issue occurs.
+
+      you can also get the name of the servers from cmd generator agent tool
 """,
     tools=[
         cmd_generator_agent_tool,
