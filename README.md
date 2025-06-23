@@ -12,4 +12,4 @@ Keys:
 
 
 
-![Architecture Diagram:](./arch_diagram.png)
+![Architecture Diagram:](./arch_digram.png)
